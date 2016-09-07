@@ -1,0 +1,73 @@
+
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: i386-w64-mingw32/i386 (32-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> require(shiny)
+Loading required package: shiny
+> 
+> options(echo = FALSE) # To print messages on the console
+
+Listening on http://192.168.1.145:4979
+
+Attaching package: 'lubridate'
+
+The following object is masked from 'package:plyr':
+
+    here
+
+The following object is masked from 'package:base':
+
+    date
+
+
+Attaching package: 'shinydashboard'
+
+The following object is masked from 'package:graphics':
+
+    box
+
+
+Attaching package: 'DT'
+
+The following objects are masked from 'package:shiny':
+
+    dataTableOutput, renderDataTable
+
+                   BillToName InvoiceNo InvoiceDate        ItemCode ProductLine
+43                 AMAZON.COM    131565  2016-09-07 S-BSM-705 2XLBL           1
+62  Careline Medical Supplies    131566  2016-09-07 S-IBS-2000(S) M           1
+63  Careline Medical Supplies    131566  2016-09-07 S-IBS-2000(S)2X           1
+64  Careline Medical Supplies    131566  2016-09-07 S-IBS-2000(S)XL           1
+85                Medbarn.com    131560  2016-09-07 S-LS112(I)SBL S           1
+86                Medbarn.com    131561  2016-09-07     S-BMS-512 S           1
+87                Medbarn.com    131563  2016-09-07      H-330 P ND           4
+88                Medbarn.com    131564  2016-09-07   S-RSM-223 2XL           1
+152                      eBay    131562  2016-09-07       H-331 M B           4
+                      ItemCodeDesc QuantityOrdered UnitPrice ExtensionAmt
+43  GABRIALLA Abdominal Support Bi               1     24.65        24.65
+62  MAXAR Elast Lumbo-Sacral Suppo               1     38.40        38.40
+63  MAXAR Elast Lumbo-Sacral Suppo               1     38.40        38.40
+64  MAXAR Elast Lumbo-Sacral Suppo               1     38.40        38.40
+85  Extra Strong Lumbo-Sacral  Sup              -1     34.60       -34.60
+86  Bio-Magnetic Lumbo-Sacral Supp               1     33.50        33.50
+87  ITA-MED Pantyhose, Firm(sheer)               2     27.69        55.38
+88  Rib Supports for men, Size 2XL               1     14.72        14.72
+152 ITA-MED Full Length (Chaps Sty               1     11.95        11.95
+[1] "*** IP: 192.168.1.145 ***"

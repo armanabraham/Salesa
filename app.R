@@ -22,7 +22,7 @@ storeLabels <- c('Careline', 'HPY','Zul',
                  'Target', 'AMZ-DS')
 
 # Read table that helps to translate between Sage ItemCodes and Main Build product names
-productInfo <- read.csv('~/RCode/Salesa/product_info.csv')
+productInfo <- read.csv("//NEWSERVER/BackUp/! Build Master/! Build/salesa_product_info.csv")
 
 
 # Definition of web user interface

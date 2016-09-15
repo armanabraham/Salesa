@@ -161,8 +161,8 @@ ui <- dashboardPage(title="Salesa",
                            br(),
                            hr(),
                            p(class='text-muted',
-                             'Before downloading, press \'Go\' first or else wrong results will be downloaded'),
-                           downloadButton('downloadData', 'Download')
+                             'Before downloading, press \'Go\' first or else wrong results will be downloaded')
+                           #downloadButton('downloadData', 'Download')
                        )
                 )
               )

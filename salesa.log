@@ -311,3 +311,30 @@ Warning: closing unused RODBC handle 5
 [1] "2016-09-01"
 NULL
 [1] "# of rows in salesHistory: 653"
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "***** UPDATING STORE NAMES SELECTIZE INPUT*********"
+ [1] "Careline Medical Supplies" "Health Products for You"  
+ [3] "Zulily Inc"                "AMAZON.COM"               
+ [5] "CVS.com/TPF"               "Drugstore.com"            
+ [7] "Medbarn.com"               "Shoebuy.com, Inc."        
+ [9] "The Betty Mills Company"   "UnbeatableSale Inc"       
+[11] "Walgreens Co."             "Walmart"                  
+[13] "eBay"                      "Groupon Goods"            
+[15] "AMAZON FBA-MEDBARN"        "Amazon.com"               
+[17] "Target.com"                "AMAZON DROPSHIP"          
+ [1] AMAZON DROPSHIP           Careline Medical Supplies
+ [3] CVS.com/TPF               Drugstore.com            
+ [5] eBay                      Groupon Goods            
+ [7] Health Products for You   Medbarn.com              
+ [9] Walgreens Co.             Walmart                  
+10 Levels: AMAZON DROPSHIP Careline Medical Supplies ... Walmart
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"

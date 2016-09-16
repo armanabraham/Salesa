@@ -24,7 +24,7 @@ Loading required package: shiny
 > 
 > options(echo = FALSE) # To print messages on the console
 
-Listening on http://192.168.1.145:4979
+Listening on http://192.168.1.10:4979
 
 Attaching package: 'lubridate'
 
@@ -50,24 +50,264 @@ The following objects are masked from 'package:shiny':
 
     dataTableOutput, renderDataTable
 
-                   BillToName InvoiceNo InvoiceDate        ItemCode ProductLine
-43                 AMAZON.COM    131565  2016-09-07 S-BSM-705 2XLBL           1
-62  Careline Medical Supplies    131566  2016-09-07 S-IBS-2000(S) M           1
-63  Careline Medical Supplies    131566  2016-09-07 S-IBS-2000(S)2X           1
-64  Careline Medical Supplies    131566  2016-09-07 S-IBS-2000(S)XL           1
-85                Medbarn.com    131560  2016-09-07 S-LS112(I)SBL S           1
-86                Medbarn.com    131561  2016-09-07     S-BMS-512 S           1
-87                Medbarn.com    131563  2016-09-07      H-330 P ND           4
-88                Medbarn.com    131564  2016-09-07   S-RSM-223 2XL           1
-152                      eBay    131562  2016-09-07       H-331 M B           4
-                      ItemCodeDesc QuantityOrdered UnitPrice ExtensionAmt
-43  GABRIALLA Abdominal Support Bi               1     24.65        24.65
-62  MAXAR Elast Lumbo-Sacral Suppo               1     38.40        38.40
-63  MAXAR Elast Lumbo-Sacral Suppo               1     38.40        38.40
-64  MAXAR Elast Lumbo-Sacral Suppo               1     38.40        38.40
-85  Extra Strong Lumbo-Sacral  Sup              -1     34.60       -34.60
-86  Bio-Magnetic Lumbo-Sacral Supp               1     33.50        33.50
-87  ITA-MED Pantyhose, Firm(sheer)               2     27.69        55.38
-88  Rib Supports for men, Size 2XL               1     14.72        14.72
-152 ITA-MED Full Length (Chaps Sty               1     11.95        11.95
-[1] "*** IP: 192.168.1.145 ***"
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+[1] "# of rows in salesHistory: 2589"
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+Warning: closing unused RODBC handle 2
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+Warning: closing unused RODBC handle 4
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+ [1] "AMAZON DROPSHIP"           "Careline Medical Supplies"
+ [3] "CVS.com/TPF"               "Drugstore.com"            
+ [5] "eBay"                      "Groupon Goods"            
+ [7] "Health Products for You"   "Medbarn.com"              
+ [9] "Walgreens Co."             "Walmart"                  
+[1] "# of rows in salesHistory: 653"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+ [1] "AMAZON DROPSHIP"           "Careline Medical Supplies"
+ [3] "CVS.com/TPF"               "Drugstore.com"            
+ [5] "eBay"                      "Groupon Goods"            
+ [7] "Health Products for You"   "Medbarn.com"              
+ [9] "Walgreens Co."             "Walmart"                  
+[11] "Zulily Inc"                "AMAZON.COM"               
+[13] "Shoebuy.com, Inc."         "The Betty Mills Company"  
+[15] "UnbeatableSale Inc"        "AMAZON FBA-MEDBARN"       
+[17] "Target.com"                "Amazon.com"               
+[1] "# of rows in salesHistory: 791"
+Warning: closing unused RODBC handle 3
+Warning: closing unused RODBC handle 1
+geom_path: Each group consists of only one observation. Do you need to adjust
+the group aesthetic?
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+ [1] "AMAZON DROPSHIP"           "Careline Medical Supplies"
+ [3] "CVS.com/TPF"               "Drugstore.com"            
+ [5] "eBay"                      "Groupon Goods"            
+ [7] "Health Products for You"   "Medbarn.com"              
+ [9] "Walgreens Co."             "Walmart"                  
+[11] "Zulily Inc"               
+[1] "# of rows in salesHistory: 653"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+ [1] "AMAZON DROPSHIP"           "Careline Medical Supplies"
+ [3] "CVS.com/TPF"               "Drugstore.com"            
+ [5] "eBay"                      "Groupon Goods"            
+ [7] "Health Products for You"   "Medbarn.com"              
+ [9] "Walgreens Co."             "Walmart"                  
+[11] "Zulily Inc"                "The Betty Mills Company"  
+[1] "# of rows in salesHistory: 655"
+geom_path: Each group consists of only one observation. Do you need to adjust
+the group aesthetic?
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+ [1] "AMAZON DROPSHIP"           "Careline Medical Supplies"
+ [3] "CVS.com/TPF"               "Drugstore.com"            
+ [5] "eBay"                      "Groupon Goods"            
+ [7] "Health Products for You"   "Medbarn.com"              
+ [9] "Walgreens Co."             "Walmart"                  
+[11] "Zulily Inc"                "The Betty Mills Company"  
+[13] "UnbeatableSale Inc"       
+[1] "# of rows in salesHistory: 661"
+geom_path: Each group consists of only one observation. Do you need to adjust
+the group aesthetic?
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+ [1] Careline Medical Supplies Health Products for You  
+ [3] Zulily Inc                AMAZON.COM               
+ [5] CVS.com/TPF               Drugstore.com            
+ [7] Medbarn.com               Shoebuy.com, Inc.        
+ [9] The Betty Mills Company   UnbeatableSale Inc       
+[11] Walgreens Co.             Walmart                  
+[13] eBay                      Groupon Goods            
+[15] AMAZON FBA-MEDBARN        Amazon.com               
+[17] Target.com                AMAZON DROPSHIP          
+18 Levels: AMAZON DROPSHIP AMAZON FBA-MEDBARN Amazon.com ... Zulily Inc
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+Warning: closing unused RODBC handle 8
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+ [1] "Careline Medical Supplies" "Health Products for You"  
+ [3] "Zulily Inc"                "AMAZON.COM"               
+ [5] "CVS.com/TPF"               "Drugstore.com"            
+ [7] "Medbarn.com"               "Shoebuy.com, Inc."        
+ [9] "The Betty Mills Company"   "UnbeatableSale Inc"       
+[11] "Walgreens Co."             "Walmart"                  
+[13] "eBay"                      "Groupon Goods"            
+[15] "AMAZON FBA-MEDBARN"        "Amazon.com"               
+[17] "Target.com"                "AMAZON DROPSHIP"          
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "***** UPDATING STORE NAMES SELECTIZE INPUT*********"
+ [1] "Careline Medical Supplies" "Health Products for You"  
+ [3] "Zulily Inc"                "AMAZON.COM"               
+ [5] "CVS.com/TPF"               "Drugstore.com"            
+ [7] "Medbarn.com"               "Shoebuy.com, Inc."        
+ [9] "The Betty Mills Company"   "UnbeatableSale Inc"       
+[11] "Walgreens Co."             "Walmart"                  
+[13] "eBay"                      "Groupon Goods"            
+[15] "AMAZON FBA-MEDBARN"        "Amazon.com"               
+[17] "Target.com"                "AMAZON DROPSHIP"          
+ [1] AMAZON DROPSHIP           Careline Medical Supplies
+ [3] CVS.com/TPF               Drugstore.com            
+ [5] eBay                      Groupon Goods            
+ [7] Health Products for You   Medbarn.com              
+ [9] Walgreens Co.             Walmart                  
+10 Levels: AMAZON DROPSHIP Careline Medical Supplies ... Walmart
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"
+[1] "# of rows in salesHistory: 2589"
+Warning: closing unused RODBC handle 9
+Warning: closing unused RODBC handle 7
+Warning: closing unused RODBC handle 6
+Warning: closing unused RODBC handle 5
+[1] "# of rows in salesHistory: 2589"
+[1] "# of rows in salesHistory: 2589"
+[1] "# of rows in salesHistory: 2589"
+[1] "# of rows in salesHistory: 1186"
+[1] "# of rows in salesHistory: 8172"
+[1] "# of rows in salesHistory: 8172"
+[1] "# of rows in salesHistory: 8172"
+[1] "# of rows in salesHistory: 8172"
+ [1] "Careline Medical Supplies" "Health Products for You"  
+ [3] "Zulily Inc"                "AMAZON.COM"               
+ [5] "CVS.com/TPF"               "Drugstore.com"            
+ [7] "Medbarn.com"               "Shoebuy.com, Inc."        
+ [9] "The Betty Mills Company"   "UnbeatableSale Inc"       
+[11] "Walgreens Co."             "Walmart"                  
+[13] "eBay"                      "Groupon Goods"            
+[15] "AMAZON FBA-MEDBARN"        "Amazon.com"               
+[17] "Target.com"                "AMAZON DROPSHIP"          
+[1] BillToName      InvoiceNo       InvoiceDate     ItemCode       
+[5] ProductLine     ItemCodeDesc    QuantityOrdered UnitPrice      
+[9] ExtensionAmt   
+<0 rows> (or 0-length row.names)
+[1] "# of rows in salesHistory: 37"
+[1] "******* Reading historical data for today *********"
+[1] "*** IP: 192.168.1.10 ***"
+[1] "***** UPDATING STORE NAMES SELECTIZE INPUT*********"
+ [1] "Careline Medical Supplies" "Health Products for You"  
+ [3] "Zulily Inc"                "AMAZON.COM"               
+ [5] "CVS.com/TPF"               "Drugstore.com"            
+ [7] "Medbarn.com"               "Shoebuy.com, Inc."        
+ [9] "The Betty Mills Company"   "UnbeatableSale Inc"       
+[11] "Walgreens Co."             "Walmart"                  
+[13] "eBay"                      "Groupon Goods"            
+[15] "AMAZON FBA-MEDBARN"        "Amazon.com"               
+[17] "Target.com"                "AMAZON DROPSHIP"          
+ [1] AMAZON DROPSHIP           Careline Medical Supplies
+ [3] CVS.com/TPF               Drugstore.com            
+ [5] eBay                      Groupon Goods            
+ [7] Health Products for You   Medbarn.com              
+ [9] Walgreens Co.             Walmart                  
+10 Levels: AMAZON DROPSHIP Careline Medical Supplies ... Walmart
+[1] "*** In ReadHistoricalDataReactive ***"
+[1] "2016-09-01"
+NULL
+[1] "# of rows in salesHistory: 653"

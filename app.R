@@ -8,19 +8,12 @@ library(lubridate)
 library(shinydashboard)
 library(DT)
 
-# Store names as they appear in Sage 
-storeNames <- c('Careline Medical Supplies', 'Health Products for You','Zulily Inc', 
-                'AMAZON.COM','CVS.com/TPF','Drugstore.com','Medbarn.com','Shoebuy.com, Inc.',
-                'The Betty Mills Company','UnbeatableSale Inc','Walgreens Co.',
-                'Walmart','eBay','Groupon Goods', 'AMAZON FBA-MEDBARN', 'Amazon.com', 'Target.com',
-                'AMAZON DROPSHIP') 
-# Store labels for plotting and selection convenience
-storeLabels <- c('Careline', 'HPY','Zul', 
-                 'AMZ-Med','CVS','Drugst','Medbarn','Shoebuy',
-                 'BettyMills','Unbeat','Walgr',
-                 'Walmrt','eBay','Grpon', 'AMZ-FBA', 'AMZ-WS', 
-                 'Target', 'AMZ-DS')
-
+# Store names as they appear in Sage and labels for plotting and selection convenience
+# More stores can be added to the CSV store
+stores <- read.csv("//NEWSERVER/BackUp/! Build Master/! Build/salesa_store_names.csv")
+storeNames <- as.character(stores$StoreNames)
+storeLabels <- as.character(stores$StoreLabels)
+print(storeNames)
 # Read table that helps to translate between Sage ItemCodes and Main Build product names
 productInfo <- read.csv("//NEWSERVER/BackUp/! Build Master/! Build/salesa_product_info.csv")
 
@@ -32,14 +25,14 @@ ui <- dashboardPage(title="Salesa",
    
     sidebarMenu(
       menuItem("Today's Sales", tabName = "allOfToday", icon = icon("dashboard"),
-               collapsable = menuSubItem('Now', tabName = 'today', selected=TRUE, icon=icon("clock-o")),
-               collapsable = menuSubItem('Details', tabName = 'details', icon = icon("bars"))),
+               collapsable = TRUE, menuSubItem('Now', tabName = 'today', selected=TRUE, icon=icon("clock-o")),
+               collapsable = TRUE, menuSubItem('Details', tabName = 'details', icon = icon("bars"))),
       #menuItem("In Details", tabName = "details", icon = icon("bars")),
       menuItem("Store Performance", tabName = "analysis", icon = icon("line-chart")),
       menuItem("Product Popularity", tabName='bestsellers', icon=icon("signal")),
       menuItem("Inventory", tabName='inventory', icon=icon("database"),
-               collapsable = menuSubItem('Inventory Count', tabName = 'lowInventory', icon=icon('bolt')),
-               collapsable = menuSubItem('Inventory Planning', tabName = 'inventoryPlanning', icon=icon('battery-full')))
+               collapsable = TRUE, menuSubItem('Inventory Count', tabName = 'lowInventory', icon=icon('bolt')),
+               collapsable = TRUE, menuSubItem('Inventory Planning', tabName = 'inventoryPlanning', icon=icon('battery-full')))
     )
   ),
   
@@ -423,6 +416,10 @@ server <- function(input, output, session) {
     
     if (is.null(input$storeNamesSelect)) {
       whichStoresToAnalyse <- byStore$BillToName        
+      print("***** UPDATING STORE NAMES SELECTIZE INPUT*********")
+      print(storeNames)
+      print(byStore$BillToName)
+
       updateSelectizeInput(session, 'storeNamesSelect', choices = storeNames, selected = byStore$BillToName, server = TRUE)
     } else whichStoresToAnalyse <- input$storeNamesSelect
     

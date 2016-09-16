@@ -8,22 +8,14 @@ library(lubridate)
 library(shinydashboard)
 library(DT)
 
-# Store names as they appear in Sage 
-storeNames <- c('Careline Medical Supplies', 'Health Products for You','Zulily Inc', 
-                'AMAZON.COM','CVS.com/TPF','Drugstore.com','Medbarn.com','Shoebuy.com, Inc.',
-                'The Betty Mills Company','UnbeatableSale Inc','Walgreens Co.',
-                'Walmart','eBay','Groupon Goods', 'AMAZON FBA-MEDBARN', 'Amazon.com', 'Target.com',
-                'AMAZON DROPSHIP') 
-# Store labels for plotting and selection convenience
-storeLabels <- c('Careline', 'HPY','Zul', 
-                 'AMZ-Med','CVS','Drugst','Medbarn','Shoebuy',
-                 'BettyMills','Unbeat','Walgr',
-                 'Walmrt','eBay','Grpon', 'AMZ-FBA', 'AMZ-WS', 
-                 'Target', 'AMZ-DS')
-
+# Store names as they appear in Sage and labels for plotting and selection convenience
+# More stores can be added to the CSV store
+stores <- read.csv("//NEWSERVER/BackUp/! Build Master/! Build/salesa_store_names.csv")
+storeNames <- as.character(stores$StoreNames)
+storeLabels <- as.character(stores$StoreLabels)
+print(storeNames)
 # Read table that helps to translate between Sage ItemCodes and Main Build product names
 productInfo <- read.csv("//NEWSERVER/BackUp/! Build Master/! Build/salesa_product_info.csv")
-
 
 # Definition of web user interface
 ui <- dashboardPage(title="Salesa",

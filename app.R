@@ -8,8 +8,8 @@ library(lubridate)
 library(shinydashboard)
 library(DT)
 
-# Store names as they appear in Sage and labels for plotting and selection convenience
-# More stores can be added to the CSV store
+# Account names, such as Walgreens, CVS, etc., as they appear in Sage and their plotting labels. 
+# Edit the CSV file to add more account. 
 stores <- read.csv("//NEWSERVER/BackUp/! Build Master/! Build/salesa_store_names.csv")
 storeNames <- as.character(stores$StoreNames)
 storeLabels <- as.character(stores$StoreLabels)

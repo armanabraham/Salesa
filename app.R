@@ -290,7 +290,7 @@ server <- function(input, output, session) {
   
   
   
-  connToSage <- function() { odbcConnect("SOTAMAS90", uid = 'arman|ITA', pwd = '') }
+  connToSage <- function() { odbcConnect("SOTAMAS90", uid = 'username|ITA', pwd = 'password') }
   #if (exists("conn")) print(conn)
   if (!exists("conn"))
     conn <- connToSage() else 
